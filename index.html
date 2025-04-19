@@ -1,148 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AIMadeLab - Crie Sites com IA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIMadeLab - IA para criação de sites</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
-
-    body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #2d0b59);
+    }
+    body {
+      background: linear-gradient(180deg, #0a0a0a 0%, #1c1c1c 100%);
       color: white;
       line-height: 1.6;
     }
-
     header {
-      padding: 30px;
+      padding: 4rem 2rem;
       text-align: center;
-      background: rgba(0, 0, 0, 0.2);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      background: radial-gradient(circle, #3a0ca3 0%, #7209b7 100%);
     }
-
     header h1 {
-      font-size: 3em;
-      color: #00FFFF;
-      text-shadow: 0 0 10px #00FFFF;
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
-
-    nav {
-      margin-top: 20px;
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
     }
-
-    nav a {
-      color: #ffffffaa;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #00FFFF;
-    }
-
-    .hero {
-      padding: 100px 20px;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 2.5em;
-      color: #ffffff;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto 30px auto;
-      font-size: 1.2em;
-      color: #cccccc;
-    }
-
-    .cta-button {
-      background: #00FFFF;
-      color: #1e1e2f;
-      padding: 15px 30px;
-      border: none;
-      font-size: 1em;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 0 15px #00FFFF;
-      transition: background 0.3s;
-    }
-
-    .cta-button:hover {
-      background: #00cccc;
-    }
-
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .section h3 {
-      font-size: 2em;
-      margin-bottom: 15px;
-    }
-
-    .section p {
-      max-width: 700px;
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
       margin: auto;
-      font-size: 1.1em;
-      color: #dddddd;
     }
-
+    .feature {
+      margin-bottom: 3rem;
+    }
+    .feature h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffbe0b;
+    }
+    .feature p {
+      color: #ccc;
+    }
+    .btn {
+      background-color: #f72585;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #b5179e;
+    }
     footer {
-      background: rgba(0, 0, 0, 0.2);
-      padding: 20px;
+      padding: 2rem;
       text-align: center;
-      color: #aaa;
+      background-color: #111;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>AIMadeLab</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#ebook">eBook</a>
-      <a href="#contato">Contato</a>
-    </nav>
+  <header data-aos="fade-down">
+    <h1><span id="typed"></span></h1>
+    <p>Aprenda a criar sites com Inteligência Artificial de forma fácil e rápida!</p>
   </header>
 
-  <section class="hero">
-    <h2>Crie Sites com Inteligência Artificial</h2>
-    <p>Aprenda como construir sites modernos e profissionais usando as ferramentas mais avançadas de IA do mercado.</p>
-    <a href="#ebook" class="cta-button">Baixar eBook</a>
+  <section data-aos="fade-up" class="feature">
+    <h2>Criação de Sites com IA</h2>
+    <p>Descubra como gerar sites profissionais usando ferramentas de Inteligência Artificial como ChatGPT, Framer AI e outras plataformas modernas.</p>
   </section>
 
-  <section class="section" id="sobre">
-    <h3>O que é o AIMadeLab?</h3>
-    <p>Um projeto completo que te ensina a criar sites com Inteligência Artificial, mesmo que você não saiba programar. Desenvolva habilidades reais para a era digital com nosso conteúdo exclusivo.</p>
+  <section data-aos="fade-up" class="feature">
+    <h2>eBook Exclusivo</h2>
+    <p>Receba nosso eBook completo com passo a passo, ferramentas e dicas para dominar o uso de IA na criação de sites.</p>
+    <button class="btn">Quero meu eBook</button>
   </section>
 
-  <section class="section" id="ebook">
-    <h3>Sobre o eBook</h3>
-    <p>Nosso eBook traz um passo a passo direto ao ponto, com exemplos práticos, ferramentas gratuitas e estratégias que realmente funcionam. Tudo feito com o poder da IA.</p>
-    <a href="#" class="cta-button">Download do eBook</a>
-  </section>
-
-  <section class="section" id="contato">
-    <h3>Fale com a gente</h3>
-    <p>Quer saber mais? Em breve teremos um canal de atendimento exclusivo para tirar dúvidas e acompanhar seu progresso.</p>
+  <section data-aos="fade-up" class="feature">
+    <h2>Curso em Breve</h2>
+    <p>Em breve, você terá acesso a um curso completo ensinando a programar sua própria IA do zero. Prepare-se!</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 AIMadeLab. Todos os direitos reservados.</p>
+    <p>© 2025 AIMadeLab. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    new Typed('#typed', {
+      strings: ["Bem-vindo ao AIMadeLab", "Sites com IA. Sem código. Sem limites."],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+  </script>
 </body>
 </html>
