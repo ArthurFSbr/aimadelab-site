@@ -1,173 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AIMadeLab - IA para criação de sites</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crie Sites com IA - FuturaCode</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
     body {
-      background-color: #121212;
-      color: #fff;
-      background-image: url('https://www.transparenttextures.com/patterns/clean-px.png');
-      background-size: cover;
-      background-attachment: fixed;
+      background: linear-gradient(135deg, #0d1b2a, #1b263b);
+      color: #e0e1dd;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
     }
-
-    header {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.6));
-      padding: 8rem 2rem;
-      text-align: center;
-      z-index: 999;
-      position: relative;
+    .hero-text {
+      font-size: 4rem;
+      font-weight: 800;
+      background: linear-gradient(45deg, #00ddeb, #ff0077);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-
-    header h1 {
-      font-size: 3.5rem;
-      color: #fff;
-      margin-bottom: 1rem;
+    .section {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
     }
-
-    header p {
-      font-size: 1.5rem;
-      color: #bbb;
-      max-width: 800px;
-      margin: auto;
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
-
-    section {
-      padding: 5rem 2rem;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
+    .floating {
+      animation: float 3s ease-in-out infinite;
     }
-
-    .feature {
-      margin-bottom: 4rem;
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
-
-    .feature h2 {
-      font-size: 2.5rem;
-      color: #ff4d88;
-      margin-bottom: 1rem;
-    }
-
-    .feature p {
-      color: #ddd;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    .btn {
-      background-color: #ff4d88;
-      color: #fff;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      border: none;
-      border-radius: 0.5rem;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      margin-top: 1.5rem;
-    }
-
-    .btn:hover {
-      background-color: #ff3366;
-    }
-
-    footer {
-      padding: 4rem 2rem;
-      background-color: #1a1a1a;
-      text-align: center;
-      color: #aaa;
-      border-top: 1px solid #333;
-    }
-
-    footer h3 {
-      font-size: 1.8rem;
-      color: #fff;
-      margin-bottom: 1rem;
-    }
-
-    footer p {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 3rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .footer-links a {
-      color: #ff4d88;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-    }
-
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
-
   </style>
 </head>
 <body>
-
-  <header data-aos="fade-down">
-    <h1>Bem-vindo ao AIMadeLab</h1>
-    <p>Crie sites incríveis e modernos com o poder da Inteligência Artificial - Sem código, apenas IA!</p>
+  <!-- Header -->
+  <header class="fixed top-0 w-full bg-opacity-80 bg-[#0d1b2a] z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4">
+      <h1 class="text-2xl font-bold text-[#00ddeb]">FuturaCode</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-[#ff0077] transition">Início</a></li>
+        <li><a href="#ebook" class="hover:text-[#ff0077] transition">eBook</a></li>
+        <li><a href="#ia" class="hover:text-[#ff0077] transition">IA</a></li>
+        <li><a href="#contato" class="hover:text-[#ff0077] transition">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section data-aos="fade-up" class="feature">
-    <h2>Criação de Sites com IA</h2>
-    <p>Transforme suas ideias em sites funcionais e profissionais rapidamente. Não é necessário saber programar! Usamos IA para automatizar todo o processo de criação e design.</p>
-  </section>
-
-  <section data-aos="fade-up" class="feature">
-    <h2>O que você vai aprender no nosso eBook</h2>
-    <p>Em nosso eBook exclusivo, você aprenderá como usar as ferramentas mais avançadas de IA para criar sites em minutos, sem codificação. Um guia completo para iniciantes e designers experientes.</p>
-    <ul>
-      <li>Como gerar sites com IA de forma simples e eficaz</li>
-      <li>Ferramentas essenciais para quem deseja criar e vender sites</li>
-      <li>Dicas para personalizar e otimizar sua página em plataformas como Vercel e GitHub</li>
-      <li>Como obter resultados rápidos sem aprender a programar</li>
-    </ul>
-    <button class="btn">Baixe o eBook Agora</button>
-  </section>
-
-  <footer>
-    <h3>AIMadeLab</h3>
-    <p>Transforme suas ideias em realidade com Inteligência Artificial. Estamos aqui para te ajudar a criar sites sem limites.</p>
-    <div class="footer-links">
-      <a href="#">Instagram</a>
-      <a href="#">TikTok</a>
-      <a href="#">WhatsApp</a>
-      <a href="#">Termos de Uso</a>
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center text-center">
+    <div>
+      <h1 class="hero-text typewrite" data-text="Crie Sites Incríveis com Inteligência Artificial">Crie Sites Incríveis com Inteligência Artificial</h1>
+      <p class="mt-4 text-xl text-gray-300">Aprenda a usar IA para construir sites modernos e personalizados em minutos!</p>
+      <a href="#ebook" class="mt-6 inline-block bg-[#ff0077] text-white px-6 py-3 rounded-full hover:bg-[#00ddeb] transition">Conheça o eBook</a>
     </div>
-    <p>© 2025 AIMadeLab. Todos os direitos reservados.</p>
+  </section>
+
+  <!-- eBook Section -->
+  <section id="ebook" class="py-20 container mx-auto text-center section">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <img src="https://via.placeholder.com/400x500?text=eBook+Capa" alt="eBook Cover" class="rounded-lg shadow-lg floating">
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0 md:pl-10">
+        <h2 class="text-3xl font-bold text-[#00ddeb]">eBook: Como Criar Sites com IA</h2>
+        <p class="mt-4 text-gray-300">Descubra o passo a passo detalhado para criar sites incríveis usando ferramentas de IA. Desde a escolha da plataforma até a personalização avançada, este eBook é seu guia definitivo!</p>
+        <a href="https://buy.stripe.com/SEU_LINK_STRIPE_AQUI" class="mt-6 inline-block bg-[#ff0077] text-white px-6 py-3 rounded-full hover:bg-[#00ddeb] transition">Comprar Agora - R$ 49,90</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- IA Section -->
+  <section id="ia" class="py-20 bg-[#1b263b] text-center section">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-[#00ddeb]">Converse com Nossa IA</h2>
+      <p class="mt-4 text-gray-300">Nossa IA está aqui para ajudar! Faça perguntas sobre criação de sites ou peça para ela gerar um site para você.</p>
+    </div>
+  </section>
+
+  <!-- Contato Section -->
+  <section id="contato" class="py-20 container mx-auto text-center section">
+    <h2 class="text-3xl font-bold text-[#00ddeb]">Entre em Contato</h2>
+    <p class="mt-4 text-gray-300">Tem dúvidas ou quer saber mais? Envie uma mensagem!</p>
+    <div class="mt-8 max-w-md mx-auto">
+      <input type="text" placeholder="Nome" class="w-full p-3 mb-4 rounded bg-[#0d1b2a] text-white">
+      <input type="email" placeholder="Email" class="w-full p-3 mb-4 rounded bg-[#0d1b2a] text-white">
+      <textarea placeholder="Mensagem" class="w-full p-3 mb-4 rounded bg-[#0d1b2a] text-white h-32"></textarea>
+      <button class="bg-[#ff0077] text-white px-6 py-3 rounded-full hover:bg-[#00ddeb] transition">Enviar</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-[#0d1b2a] text-center">
+    <p class="text-gray-300">© 2025 FuturaCode. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
-    new Typed('#typed', {
-      strings: ["Criação de Sites com IA", "Transforme suas ideias em realidade agora!"],
-      typeSpeed: 50,
-      backSpeed: 25,
-      loop: true
+    // Typewriting effect
+    const typewrite = (element, text, speed = 50) => {
+      let i = 0;
+      element.innerHTML = '';
+      function type() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, speed);
+        }
+      }
+      type();
+    };
+
+    document.querySelectorAll('.typewrite').forEach(el => {
+      const text = el.getAttribute('data-text');
+      typewrite(el, text);
+    });
+
+    // Scroll animations with GSAP
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.section').forEach(section => {
+      gsap.fromTo(section, 
+        { opacity: 0, y: 50 },
+        { 
+          opacity: 1, 
+          y: 0, 
+          duration: 1, 
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: section,
+            start: 'top 80%',
+            toggleActions: 'play none none reverse'
+          }
+        }
+      );
     });
   </script>
-
+  <!-- Elfsight Chatbot Script -->
+  <script src="SEU_CODIGO_ELFSIGHT_AQUI"></script>
 </body>
 </html>
