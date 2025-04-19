@@ -13,139 +13,148 @@
       box-sizing: border-box;
       font-family: 'Inter', sans-serif;
     }
+
     body {
-      background: linear-gradient(180deg, #0a0a0a 0%, #1c1c1c 100%);
-      color: white;
-      line-height: 1.6;
-      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+      background-color: #121212;
+      color: #fff;
+      background-image: url('https://www.transparenttextures.com/patterns/clean-px.png');
       background-size: cover;
+      background-attachment: fixed;
     }
+
     header {
-      padding: 4rem 2rem;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.6));
+      padding: 8rem 2rem;
       text-align: center;
-      background: radial-gradient(circle, #3a0ca3 0%, #7209b7 100%);
+      z-index: 999;
+      position: relative;
     }
+
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #ddd;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .feature {
-      margin-bottom: 3rem;
-    }
-    .feature h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #ffbe0b;
-    }
-    .feature p {
-      color: #ccc;
-    }
-    .feature ul {
-      margin-top: 1rem;
-      padding-left: 1.5rem;
-      color: #ccc;
-    }
-    .feature ul li {
-      margin-bottom: 0.5rem;
-    }
-    .btn {
-      background-color: #f72585;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 0.5rem;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    .btn:hover {
-      background-color: #b5179e;
-    }
-    footer {
-      padding: 3rem 2rem;
-      background: #0d0d0d;
-      color: #aaa;
-      text-align: center;
-      border-top: 1px solid #333;
-    }
-    footer h3 {
-      font-size: 1.5rem;
+      font-size: 3.5rem;
       color: #fff;
       margin-bottom: 1rem;
     }
-    footer p {
-      font-size: 0.9rem;
+
+    header p {
+      font-size: 1.5rem;
+      color: #bbb;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .feature {
+      margin-bottom: 4rem;
+    }
+
+    .feature h2 {
+      font-size: 2.5rem;
+      color: #ff4d88;
       margin-bottom: 1rem;
     }
+
+    .feature p {
+      color: #ddd;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      background-color: #ff4d88;
+      color: #fff;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 1.5rem;
+    }
+
+    .btn:hover {
+      background-color: #ff3366;
+    }
+
+    footer {
+      padding: 4rem 2rem;
+      background-color: #1a1a1a;
+      text-align: center;
+      color: #aaa;
+      border-top: 1px solid #333;
+    }
+
+    footer h3 {
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    footer p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
     .footer-links {
-      margin-top: 1rem;
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
+      gap: 3rem;
+      margin-bottom: 1.5rem;
     }
+
     .footer-links a {
-      color: #f72585;
+      color: #ff4d88;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 1rem;
     }
+
     .footer-links a:hover {
       text-decoration: underline;
     }
+
   </style>
 </head>
 <body>
+
   <header data-aos="fade-down">
-    <h1><span id="typed"></span></h1>
-    <p>Aprenda a criar sites com Inteligência Artificial de forma fácil e rápida!</p>
+    <h1>Bem-vindo ao AIMadeLab</h1>
+    <p>Crie sites incríveis e modernos com o poder da Inteligência Artificial - Sem código, apenas IA!</p>
   </header>
 
   <section data-aos="fade-up" class="feature">
     <h2>Criação de Sites com IA</h2>
-    <p>Descubra como gerar sites profissionais usando ferramentas de Inteligência Artificial como ChatGPT, Framer AI e outras plataformas modernas.</p>
+    <p>Transforme suas ideias em sites funcionais e profissionais rapidamente. Não é necessário saber programar! Usamos IA para automatizar todo o processo de criação e design.</p>
   </section>
 
   <section data-aos="fade-up" class="feature">
     <h2>O que você vai aprender no nosso eBook</h2>
+    <p>Em nosso eBook exclusivo, você aprenderá como usar as ferramentas mais avançadas de IA para criar sites em minutos, sem codificação. Um guia completo para iniciantes e designers experientes.</p>
     <ul>
-      <li>Quais ferramentas de IA utilizar para criar sites rapidamente</li>
-      <li>Como gerar códigos prontos com IA sem saber programar</li>
-      <li>Dicas para montar seu próprio portfólio de sites</li>
-      <li>Como usar plataformas como Vercel e GitHub</li>
-      <li>Modelos prontos para você copiar e editar</li>
+      <li>Como gerar sites com IA de forma simples e eficaz</li>
+      <li>Ferramentas essenciais para quem deseja criar e vender sites</li>
+      <li>Dicas para personalizar e otimizar sua página em plataformas como Vercel e GitHub</li>
+      <li>Como obter resultados rápidos sem aprender a programar</li>
     </ul>
-  </section>
-
-  <section data-aos="fade-up" class="feature">
-    <h2>eBook Exclusivo</h2>
-    <p>Receba nosso eBook completo com passo a passo, ferramentas e dicas para dominar o uso de IA na criação de sites. São mais de 30 páginas com conteúdo prático e direto ao ponto.</p>
-    <button class="btn">Quero meu eBook</button>
-  </section>
-
-  <section data-aos="fade-up" class="feature">
-    <h2>Curso em Breve</h2>
-    <p>Estamos desenvolvendo um curso completo que ensinará a programar sua própria IA do zero, com foco em aplicações práticas para web, bots e muito mais.</p>
+    <button class="btn">Baixe o eBook Agora</button>
   </section>
 
   <footer>
     <h3>AIMadeLab</h3>
-    <p>Transformando ideias em realidade com Inteligência Artificial.</p>
+    <p>Transforme suas ideias em realidade com Inteligência Artificial. Estamos aqui para te ajudar a criar sites sem limites.</p>
     <div class="footer-links">
       <a href="#">Instagram</a>
       <a href="#">TikTok</a>
       <a href="#">WhatsApp</a>
       <a href="#">Termos de Uso</a>
     </div>
-    <p style="margin-top: 1.5rem;">© 2025 AIMadeLab. Todos os direitos reservados.</p>
+    <p>© 2025 AIMadeLab. Todos os direitos reservados.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -153,11 +162,12 @@
   <script>
     AOS.init();
     new Typed('#typed', {
-      strings: ["Bem-vindo ao AIMadeLab", "Sites com IA. Sem código. Sem limites."],
+      strings: ["Criação de Sites com IA", "Transforme suas ideias em realidade agora!"],
       typeSpeed: 50,
       backSpeed: 25,
       loop: true
     });
   </script>
+
 </body>
 </html>
