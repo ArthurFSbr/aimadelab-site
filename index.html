@@ -1,0 +1,98 @@
+export default function LandingPage() {
+  return (
+    <div className="bg-black text-white min-h-screen font-sans">
+      <header className="flex items-center justify-between px-6 py-4 border-b border-gray-800">
+        <h1 className="text-3xl font-bold text-cyan-400">AIMadeLab</h1>
+        <nav className="space-x-4">
+          <a href="#learn" className="hover:text-cyan-300">O que você vai aprender</a>
+          <a href="#ebook" className="hover:text-cyan-300">Baixar eBook</a>
+        </nav>
+      </header>
+
+      <section className="text-center py-20 px-4 bg-gradient-to-br from-black via-gray-900 to-gray-800">
+        <h2 className="text-5xl font-extrabold mb-4 text-cyan-400">Crie Sites Usando IA</h2>
+        <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          Descubra como você pode criar um site completo utilizando inteligência artificial — mesmo sem saber programar.
+        </p>
+        <a href="#ebook" className="bg-cyan-500 hover:bg-cyan-600 text-black px-6 py-3 rounded-2xl text-lg font-semibold shadow-xl">
+          Baixar eBook Grátis
+        </a>
+      </section>
+
+      <section id="learn" className="py-20 px-6 bg-gray-950">
+        <h3 className="text-3xl font-bold mb-6 text-center text-white">O que você vai aprender</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto text-gray-300">
+          <ul className="space-y-4">
+            <li>✅ Como gerar ideias de site com IA</li>
+            <li>✅ Criar design visual e logos com IA</li>
+            <li>✅ Escrever textos prontos com IA</li>
+            <li>✅ Publicar seu site na internet</li>
+            <li>✅ Monetizar com eBooks e cursos</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="ebook" className="py-20 px-6 bg-black text-center">
+        <h3 className="text-3xl font-bold mb-4 text-cyan-400">Baixe o eBook Agora</h3>
+        <p className="text-gray-300 mb-8 max-w-xl mx-auto">
+          Aprenda passo a passo como criar um site usando apenas inteligência artificial. Ideal pra iniciantes e criadores digitais.
+        </p>
+
+        <div className="bg-gray-900 p-6 rounded-2xl text-left max-w-2xl mx-auto text-gray-200">
+          <h4 className="text-2xl font-semibold mb-4 text-cyan-300">📘 Introdução</h4>
+          <p className="mb-4">A inteligência artificial está revolucionando a forma como criamos conteúdo online. Neste eBook, você vai aprender como usar ferramentas de IA para criar um site completo, desde o design até os textos e publicação.</p>
+
+          <h4 className="text-2xl font-semibold mb-4 text-cyan-300">🔧 Ferramentas que você vai usar</h4>
+          <ul className="list-disc list-inside mb-4">
+            <li>ChatGPT (para gerar textos, ideias e estrutura)</li>
+            <li>Midjourney/DALL·E (para gerar imagens e logos)</li>
+            <li>Framer/Siter/Webflow (para montar o site sem codar)</li>
+            <li>Canva (para criar o design visual e eBook)</li>
+          </ul>
+
+          <h4 className="text-2xl font-semibold mb-4 text-cyan-300">🚀 Etapas do processo</h4>
+          <ol className="list-decimal list-inside mb-4">
+            <li>Gerar a ideia do site</li>
+            <li>Gerar o design visual (cores, logo, layout)</li>
+            <li>Criar os textos com IA</li>
+            <li>Montar o site usando plataformas sem código</li>
+            <li>Publicar e conectar com domínio</li>
+            <li>Divulgar nas redes sociais</li>
+            <li>Monetizar com produtos digitais</li>
+          </ol>
+
+          <h4 className="text-2xl font-semibold mb-4 text-cyan-300">📌 Checklist final</h4>
+          <ul className="list-disc list-inside mb-4">
+            <li>✅ Ideia validada com IA</li>
+            <li>✅ Logo gerado e aprovado</li>
+            <li>✅ Textos criados com prompt bem feito</li>
+            <li>✅ Página publicada com layout profissional</li>
+            <li>✅ Link de domínio funcionando</li>
+            <li>✅ Redes sociais configuradas</li>
+            <li>✅ Link de produto ou eBook pronto</li>
+          </ul>
+
+          <h4 className="text-2xl font-semibold mb-4 text-cyan-300">💡 Ideias de nichos para seu site</h4>
+          <ul className="list-disc list-inside">
+            <li>Sites de dicas de beleza com IA</li>
+            <li>Guias de estudos e produtividade</li>
+            <li>Consultoria digital automatizada</li>
+            <li>Portfólios criativos com imagens de IA</li>
+            <li>Sites de receitas e alimentação saudável</li>
+            <li>Landing pages para vender eBooks ou serviços</li>
+          </ul>
+
+          <p className="mt-4">Você pode adaptar qualquer ideia para seu estilo. O importante é começar e ajustar no caminho com base nos dados.</p>
+        </div>
+
+        <button className="mt-8 bg-cyan-500 hover:bg-cyan-600 text-black px-8 py-3 rounded-2xl text-lg font-semibold shadow-xl">
+          Baixar eBook em PDF
+        </button>
+      </section>
+
+      <footer className="text-center py-6 border-t border-gray-800 text-gray-500">
+        © 2025 AIMadeLab. Todos os direitos reservados.
+      </footer>
+    </div>
+  );
+}
