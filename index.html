@@ -1,118 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIMadeLab</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        .cta-button {
-            background-color: #6a3b9d;
-            color: white;
-            padding: 15px 30px;
-            font-size: 18px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        .cta-button:hover {
-            background-color: #5a2e84;
-        }
-        .section {
-            padding: 40px;
-            text-align: center;
-        }
-        .section img {
-            width: 50%;
-            max-width: 500px;
-        }
-        .features {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .feature {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            width: 250px;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        footer a {
-            color: #fff;
-            margin: 0 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AIMadeLab - Crie Sites com IA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2d0b59);
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 30px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #00FFFF;
+      text-shadow: 0 0 10px #00FFFF;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #ffffffaa;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00FFFF;
+    }
+
+    .hero {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      font-size: 1.2em;
+      color: #cccccc;
+    }
+
+    .cta-button {
+      background: #00FFFF;
+      color: #1e1e2f;
+      padding: 15px 30px;
+      border: none;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 15px #00FFFF;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #00cccc;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1em;
+      color: #dddddd;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-
-<header>
+  <header>
     <h1>AIMadeLab</h1>
     <nav>
-        <a href="#ebook">eBook</a>
-        <a href="#benefits">Benefícios</a>
-        <a href="#contact">Contato</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#ebook">eBook</a>
+      <a href="#contato">Contato</a>
     </nav>
-</header>
+  </header>
 
-<section id="hero" class="section">
+  <section class="hero">
     <h2>Crie Sites com Inteligência Artificial</h2>
-    <p>Descubra como criar sites incríveis usando IA com o nosso guia prático.</p>
-    <a href="#ebook" class="cta-button">Adquira o eBook Agora</a>
-</section>
+    <p>Aprenda como construir sites modernos e profissionais usando as ferramentas mais avançadas de IA do mercado.</p>
+    <a href="#ebook" class="cta-button">Baixar eBook</a>
+  </section>
 
-<section id="benefits" class="section">
-    <h2>Benefícios do eBook</h2>
-    <div class="features">
-        <div class="feature">
-            <h3>Aprenda do Zero</h3>
-            <p>Comece sua jornada sem nenhum conhecimento prévio sobre IA.</p>
-        </div>
-        <div class="feature">
-            <h3>Fácil de Seguir</h3>
-            <p>Passo a passo claro e simples para construir seu próprio site.</p>
-        </div>
-        <div class="feature">
-            <h3>Ferramentas Inovadoras</h3>
-            <p>Use as mais recentes ferramentas de IA para acelerar seu processo.</p>
-        </div>
-    </div>
-</section>
+  <section class="section" id="sobre">
+    <h3>O que é o AIMadeLab?</h3>
+    <p>Um projeto completo que te ensina a criar sites com Inteligência Artificial, mesmo que você não saiba programar. Desenvolva habilidades reais para a era digital com nosso conteúdo exclusivo.</p>
+  </section>
 
-<section id="contact" class="section">
-    <h2>Entre em Contato</h2>
-    <p>Fale conosco nas redes sociais ou envie um email para suporte@aimadelab.com.</p>
-</section>
+  <section class="section" id="ebook">
+    <h3>Sobre o eBook</h3>
+    <p>Nosso eBook traz um passo a passo direto ao ponto, com exemplos práticos, ferramentas gratuitas e estratégias que realmente funcionam. Tudo feito com o poder da IA.</p>
+    <a href="#" class="cta-button">Download do eBook</a>
+  </section>
 
-<footer>
-    <p>&copy; 2025 AIMadeLab | <a href="#">Termos de Serviço</a> | <a href="#">Política de Privacidade</a></p>
-    <p>Redes Sociais: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
-</footer>
+  <section class="section" id="contato">
+    <h3>Fale com a gente</h3>
+    <p>Quer saber mais? Em breve teremos um canal de atendimento exclusivo para tirar dúvidas e acompanhar seu progresso.</p>
+  </section>
 
+  <footer>
+    <p>&copy; 2025 AIMadeLab. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
