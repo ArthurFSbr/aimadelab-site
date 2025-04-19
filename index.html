@@ -17,6 +17,8 @@
       background: linear-gradient(180deg, #0a0a0a 0%, #1c1c1c 100%);
       color: white;
       line-height: 1.6;
+      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+      background-size: cover;
     }
     header {
       padding: 4rem 2rem;
@@ -69,10 +71,35 @@
       background-color: #b5179e;
     }
     footer {
-      padding: 2rem;
+      padding: 3rem 2rem;
+      background: #0d0d0d;
+      color: #aaa;
       text-align: center;
-      background-color: #111;
-      color: #888;
+      border-top: 1px solid #333;
+    }
+    footer h3 {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    footer p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .footer-links {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: #f72585;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -110,7 +137,15 @@
   </section>
 
   <footer>
-    <p>© 2025 AIMadeLab. Todos os direitos reservados.</p>
+    <h3>AIMadeLab</h3>
+    <p>Transformando ideias em realidade com Inteligência Artificial.</p>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Termos de Uso</a>
+    </div>
+    <p style="margin-top: 1.5rem;">© 2025 AIMadeLab. Todos os direitos reservados.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
